@@ -61,14 +61,19 @@
             background: #f5f5f5;
         }
 
-        .brand-logo {
-            display: block;
-            width: 148px;
-            height: auto;
+        .ecocash-logo {
+            display: inline-flex;
+            align-items: center;
             margin-right: 24px;
-            object-fit: contain;
-            mix-blend-mode: multiply;
+            color: #0056a6;
+            font-size: clamp(1.55rem, 7vw, 2rem);
+            font-weight: 800;
+            letter-spacing: -1.2px;
+            line-height: 1;
+            text-decoration: none;
         }
+
+        .ecocash-logo .cash-word { color: #e30613; }
 
         .welcome-block {
             display: flex;
@@ -356,7 +361,7 @@
 
         @media (max-width: 380px) {
             .loan-calculator-container { padding: 12px; }
-            .brand-logo { width: 132px; margin-right: 12px; }
+            .ecocash-logo { margin-right: 12px; font-size: 1.45rem; }
             .calculator-content { padding: 16px; }
             .calculator-header h1 { font-size: 1.55rem; }
             .term-buttons { gap: 6px; }
@@ -372,7 +377,7 @@
     <div id="root">
         <main class="loan-calculator-container">
             <header class="top-header">
-                <img class="brand-logo" src="cabslogo.jpeg" alt="cabs">
+                <a class="ecocash-logo" href="#" aria-label="EcoCash home"><span>Eco</span><span class="cash-word">Cash</span></a>
                 <div class="welcome-block">
                     <svg class="welcome-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                         <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
